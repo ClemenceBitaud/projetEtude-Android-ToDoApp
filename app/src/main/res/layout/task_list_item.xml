@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_shadow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskInt"
+            android:text="Intitulé"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#555"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskCont"
+            android:text="Context"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="#555"
+            android:layout_below="@id/taskInt"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskDate"
+            android:text="date"
+            android:paddingTop="3dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="23dp"
+            android:textColor="#555"
+            android:layout_below="@id/taskCont"
+            android:drawableLeft="@drawable/ic_today_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskHeure"
+            android:paddingTop="3dp"
+            android:text="heure"
+            android:drawableLeft="@drawable/ic_query_builder_black_24dp"
+            android:textColor="#555"
+            android:layout_below="@id/taskCont"
+            android:layout_toRightOf="@id/taskDate"
+            />
+
+        <TextView
+            android:id="@+id/taskUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Url"
+            android:textColor="#555"
+            android:layout_below="@id/taskDate"
+            android:paddingLeft="25dp"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

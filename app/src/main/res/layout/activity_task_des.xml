@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".taskDesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Détails"
+            android:textColor="#555"
+            android:textSize="70px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabModif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/detailTitle"
+            android:layout_marginLeft="80dp"
+            app:srcCompat="@drawable/ic_create_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/detailInti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailTitle"
+            android:text="Intitulé : "
+            android:textColor="#555"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/detIntiEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailInti"
+            android:hint="Intitulé"
+            android:enabled="false"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/detailContext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Context : "
+            android:textColor="#555"
+            android:textSize="18dp"
+            android:layout_below="@+id/detIntiEdit"/>
+
+        <EditText
+            android:id="@+id/detContEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailContext"
+            android:hint="Context"
+            android:enabled="false"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/detailDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detContEdit"
+            android:text="Description : "
+            android:textColor="#555"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/detDesEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailDes"
+            android:hint="Description"
+            android:lines="3"
+            android:gravity="left"
+            android:enabled="false"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/detailDebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detDesEdit"
+            android:text="Début : "
+            android:textColor="#555"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/icDateDebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#555"
+            android:drawableLeft="@drawable/ic_today_black_24dp"
+            android:layout_below="@id/detailDebut"
+            android:layout_marginTop="22dp"/>
+
+        <Button
+            android:id="@+id/newDateDebutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Début"
+            android:textColor="#555"
+            android:background="#f5f5f5"
+            android:layout_below="@id/detailDebut"
+            android:layout_toRightOf="@id/icDateDebut"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/icHeureDebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#555"
+            android:layout_marginTop="22dp"
+            android:drawableLeft="@drawable/ic_query_builder_black_24dp"
+            android:layout_below="@id/detailDebut"
+            android:layout_toRightOf="@id/newDateDebutButton"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/newHeureDebutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#555"
+            android:background="#f5f5f5"
+            android:text="heure debut"
+            android:layout_below="@id/detailDebut"
+            android:layout_toRightOf="@id/icHeureDebut"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/detailFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fin : "
+            android:textColor="#555"
+            android:textSize="18dp"
+            android:layout_below="@id/newDateDebutButton"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/icDateFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#555"
+            android:drawableLeft="@drawable/ic_today_black_24dp"
+            android:layout_below="@id/detailFin"
+            android:layout_marginTop="22dp"/>
+
+        <Button
+            android:id="@+id/newDateFinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#555"
+            android:background="#f5f5f5"
+            android:text="Date fin"
+            android:layout_below="@id/detailFin"
+            android:layout_toRightOf="@id/icDateFin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/icHeureFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#555"
+            android:layout_marginTop="22dp"
+            android:drawableLeft="@drawable/ic_query_builder_black_24dp"
+            android:layout_below="@id/detailFin"
+            android:layout_toRightOf="@id/newDateDebutButton"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/newHeureFinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#555"
+            android:background="#f5f5f5"
+            android:text="Heure fin"
+            android:layout_below="@id/detailFin"
+            android:layout_toRightOf="@id/icHeureFin"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+
+        <TextView
+            android:id="@+id/urlText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous pouvez ajouter un lien vers un site web à votre tâche"
+            android:textColor="#555"
+            android:textSize="18dp"
+            android:layout_below="@id/newDateFinButton"
+            android:visibility="invisible"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/urlEdit"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/urlText"
+            android:hint="Entrez une URL"
+            android:visibility="invisible"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:layout_below="@id/urlText"
+            android:layout_toRightOf="@id/urlEdit"
+            android:visibility="invisible"
+            android:textColor="#555"
+            android:background="#f5f5f5" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabValid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/urlEdit"
+            android:layout_centerHorizontal="true"
+            app:backgroundTint="@color/colorGreen"
+            app:srcCompat="@drawable/ic_done_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

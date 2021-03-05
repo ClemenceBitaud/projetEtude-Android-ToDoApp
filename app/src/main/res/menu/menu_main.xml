@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.thetodoapp.MainActivity">
+
+    <item
+        android:id="@+id/triere_par"
+        android:orderInCategory="100"
+        android:title="Trier par"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_date"
+        android:orderInCategory="100"
+        android:title="Tâche ordre croissant"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_titre"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_sort_by_alpha_black_24dp"
+        android:title="Titre ordre alphabétique"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_context"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_sort_by_alpha_black_24dp"
+        android:title="Context ordre alphabétique"
+        app:showAsAction="never" />
+
+</menu>
